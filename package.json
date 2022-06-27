@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "npm run vercel login && npm run vercel link",
+    "start": "npm run vercel dev",
+    "dev": "npm run start"
   },
   "author": "charliesbot",
   "dependencies": {
