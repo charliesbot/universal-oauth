@@ -8,7 +8,8 @@ import (
 )
 
 func RefreshToken(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
+	w.Header().Add("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
 
 	oauthConfig := util.GetOAuthConfig()
 	code := r.URL.Query().Get("code")
@@ -19,9 +20,6 @@ func RefreshToken(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.WriteHeader(http.StatusOK)
 
-	e := json.NewEncoder(w)
-	e.SetIndent("", "  ")
-	e.Encode(*token)
+	json.NewEncoder(w).Encode(token)
 }
