@@ -19,6 +19,8 @@ func RefreshToken(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	w.WriteHeader(http.StatusOK)
+
 	e := json.NewEncoder(w)
 	e.SetIndent("", "  ")
 	e.Encode(*token)
