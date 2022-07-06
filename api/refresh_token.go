@@ -8,6 +8,8 @@ import (
 )
 
 func RefreshToken(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
 	oauthConfig := util.GetOAuthConfig()
 	code := r.URL.Query().Get("code")
 	token, err := oauthConfig.Exchange(context.Background(), code)
