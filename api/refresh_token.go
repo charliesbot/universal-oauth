@@ -20,6 +20,5 @@ func RefreshToken(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-
 	json.NewEncoder(w).Encode(token)
 }
