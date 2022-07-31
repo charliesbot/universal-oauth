@@ -10,6 +10,10 @@
   },
   "author": "charliesbot",
   "dependencies": {
+    "@types/simple-oauth2": "^4.1.1",
+    "@vercel/node": "^2.5.2",
+    "micro": "^9.4.0",
+    "simple-oauth2": "^4.3.0",
     "vercel": "^25.1.0"
   }
 }
