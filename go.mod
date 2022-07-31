@@ -3,6 +3,7 @@ module universal-oauth
 go 1.18
 
 require (
+	github.com/aws/aws-lambda-go v1.34.0 // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 	golang.org/x/oauth2 v0.0.0-20220622183110-fd043fe589d2 // indirect
