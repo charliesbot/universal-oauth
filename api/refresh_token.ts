@@ -14,6 +14,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
 
   } catch (error) {
     console.log('Access Token Error', error.message);
+    response.end();
   }
 };
 

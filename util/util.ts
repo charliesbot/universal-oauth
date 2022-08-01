@@ -17,6 +17,7 @@ const feedlyConfig = {
     authorizeHost: `${feedlyUrl}/v3/auth/auth`,
     authorizePath: `${feedlyUrl}/v3/auth/auth`,
     tokenHost: `${feedlyUrl}/v3/auth/token`,
+    tokenPath: `${feedlyUrl}/v3/auth/token`,
   }
 };
 
