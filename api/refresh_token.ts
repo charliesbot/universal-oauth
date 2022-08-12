@@ -10,6 +10,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
       ...baseConfig,
       code: request.query.code as string,
     });
+    response.setHeader('Content-Type', 'application/json');
     response.end(JSON.stringify(accessToken));
 
   } catch (error) {
