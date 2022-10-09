@@ -1,6 +1,6 @@
 const feedlyUrl = "https://sandbox7.feedly.com";
 const clientID = "sandbox";
-const clientSecret = "NdyYvHssp6H6c2iTiU6mMaBQQ409pMOy";
+const clientSecret = "qvuYhLMX2f5l7-fa55opGkY9RDWUZp7l";
 
 const baseConfig = {
   redirect_uri:
