@@ -2,8 +2,8 @@ const feedlyUrl = "https://cloud.feedly.com";
 const clientID = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 
-console.log("TEEEST ", clientID);
-console.log("TEEEST ", clientSecret);
+console.log("TEEEST COOL ", clientID);
+console.log("TEEEST COOL 2 ", clientSecret);
 
 const baseConfig = {
   redirect_uri:
