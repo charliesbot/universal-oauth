@@ -15,5 +15,8 @@
     "micro": "^9.4.0",
     "simple-oauth2": "^4.3.0",
     "vercel": "^25.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7"
   }
 }

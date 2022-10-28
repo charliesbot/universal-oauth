@@ -1,10 +1,10 @@
-const feedlyUrl = "https://sandbox7.feedly.com";
-const clientID = "sandbox";
-const clientSecret = "qvuYhLMX2f5l7-fa55opGkY9RDWUZp7l";
+const feedlyUrl = "https://cloud.feedly.com";
+const clientID = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
 
 const baseConfig = {
   redirect_uri:
-    "http://localhost:8080/callback",
+    "charliesbotrssapp://oauth",
   scope: 'https://cloud.feedly.com/subscriptions',
 }
 
