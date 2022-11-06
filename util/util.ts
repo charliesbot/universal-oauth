@@ -4,7 +4,7 @@ const clientSecret = process.env.CLIENT_SECRET;
 
 const baseConfig = {
   redirect_uri:
-    "charliesbotrssapp://oauth",
+    "charliesbotrssapp://oauth/splash",
   scope: 'https://cloud.feedly.com/subscriptions',
 }
 
