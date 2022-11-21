@@ -4,10 +4,10 @@ import {feedlyConfig} from "../util/util";
 
 export default async (request: VercelRequest, response: VercelResponse) => {
   const client = new AuthorizationCode(feedlyConfig);
+  const refreshToken = request.query.refresh_token as string;
 
   try {
-    const data = request.body;
-    let accessToken = client.createToken(JSON.parse(data));
+    let accessToken = client.createToken({refresh_token: refreshToken});
     accessToken = await accessToken.refresh();
     response.setHeader('Content-Type', 'application/json');
     response.end(JSON.stringify(accessToken));
